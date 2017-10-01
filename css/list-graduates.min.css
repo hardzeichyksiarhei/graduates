@@ -1,0 +1,160 @@
+.s-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #039BE5; }
+  .s-home__content {
+    text-align: center;
+    color: #fff; }
+  .s-home__icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+    .s-home__icons img {
+      width: 20%;
+      height: 20%; }
+      .s-home__icons img:first-of-type, .s-home__icons img:last-of-type {
+        width: 12%;
+        height: 12%; }
+      .s-home__icons img:first-of-type {
+        margin-right: 30px; }
+      .s-home__icons img:last-of-type {
+        margin-left: 30px; }
+  .s-home__description {
+    width: 80%;
+    margin: 40px auto; }
+
+.s-content {
+  padding-top: 0; }
+
+.graduates-list {
+  margin-top: 70px; }
+  .graduates-list__item {
+    position: relative;
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px; }
+    .graduates-list__item:nth-of-type(n + 5):after {
+      content: '';
+      position: absolute;
+      left: 15%;
+      top: 0;
+      width: 70%;
+      height: 1px;
+      background-color: #c1c4c6; }
+  .graduates-list__avatar {
+    width: 70%; }
+    .graduates-list__avatar img {
+      margin: 0 auto; }
+  .graduates-list__name {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0; }
+  .graduates-list__date {
+    flex-grow: 1;
+    font-size: 12px; }
+  .graduates-list__link {
+    margin-top: 20px;
+    background-color: #039BE5;
+    color: #fff; }
+    .graduates-list__link:before {
+      background-color: #01579B; }
+
+.date-filter {
+  position: relative;
+  border-bottom: 1px solid #95989A;
+  height: 60px;
+  padding: 0 39px; }
+  .date-filter .container {
+    height: 100%; }
+
+.date-filter-carousel .owl-stage-outer, .date-filter-carousel .owl-stage, .date-filter-carousel .owl-item {
+  position: static;
+  height: 100%; }
+
+.date-filter-carousel .owl-prev, .date-filter-carousel .owl-next {
+  position: absolute;
+  top: calc(50% - 12px);
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  transition: .25s opacity linear; }
+  .date-filter-carousel .owl-prev.disabled, .date-filter-carousel .owl-next.disabled {
+    opacity: 0; }
+  .date-filter-carousel .owl-prev svg, .date-filter-carousel .owl-next svg {
+    fill: #aeb1b3; }
+
+.date-filter-carousel .owl-prev {
+  right: 15px; }
+
+.date-filter-carousel .owl-next {
+  left: 15px;
+  transform: rotate(180deg); }
+
+.date-filter-carousel {
+  position: static;
+  height: 100%; }
+  .date-filter-carousel__item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .date-filter-carousel__link {
+    text-decoration: none;
+    color: #95989a; }
+
+.search-form {
+  padding-top: 50px; }
+  .search-form__group {
+    height: 40px; }
+  .search-form__btn {
+    width: 50px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #a8abad;
+    outline: none; }
+    .search-form__btn svg {
+      margin: 1px auto 0;
+      width: 55%;
+      fill: #a8abad; }
+  .search-form__control {
+    float: left;
+    width: calc(100% - 50px);
+    height: 40px;
+    border: 1px solid #a8abad;
+    border-right: none;
+    padding: 0 15px;
+    outline: none; }
+    .search-form__control:focus + .search-form__btn svg {
+      fill: #039BE5; }
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .graduates-list__item:nth-of-type(n + 4):after {
+    content: '';
+    position: absolute;
+    left: 15%;
+    top: 0;
+    width: 70%;
+    height: 1px;
+    background-color: #c1c4c6; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
