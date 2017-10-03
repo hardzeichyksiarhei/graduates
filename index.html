@@ -19,9 +19,9 @@
                             <img class="img-responsive" src="img/mortarboard.svg" alt="Mortarboard">
                         </div>
                         <h1 class="home-carousel__title">Ассоциация выпускников</h1>
-                        <h3 class="home-carousel__sub-title">БГПУ им. М. Танка</h3>
+                        <h3 class="home-carousel__sub-title">физико-математического факультета БГПУ</h3>
                         <p class="home-carousel__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <a class="btn btn--while" href="#">Вступить в ассоциацию</a>
+                        <a class="trigger btn btn--while" href="#">Вступить в ассоциацию</a>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                         <h1 class="home-carousel__title">Ассоциация выпускников</h1>
                         <h3 class="home-carousel__sub-title">БГПУ им. М. Танка</h3>
                         <p class="home-carousel__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <a class="btn btn--while" href="#">Вступить в ассоциацию</a>
+                        <a class="trigger btn btn--while" href="#">Вступить в ассоциацию</a>
                     </div>
                 </div>
             </div>
@@ -111,5 +111,80 @@
     </footer>
 </div>
 
+<div id="modal" class="iziModal iziModal-form">
+    <form id="register-form" class="register-form" data-toggle="validator" data-focus="false" role="form">
+        <div class="row">
+            <div class="col-md-6">
+                <fieldset class="form-group">
+                    <legend>Общая информация</legend>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Введите Ф.И.О.*" data-required-error="Это поле обязательно для заполнения" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="e-mail" aria-describedby="emailHelp" placeholder="Введите E-mail*" data-required-error="Это поле обязательно для заполнения" data-error="Некорректный адрес электронной почты" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Введите номер телефона" data-tel-error="Это поле обязательно для заполнения">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="faculty" aria-describedby="nameHelp" placeholder="Введите факультет">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="year" aria-describedby="nameHelp" placeholder="Введите год окончания факультета*" data-required-error="Это поле обязательно для заполнения" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="specialty" aria-describedby="nameHelp" placeholder="Введите специальность">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="group" aria-describedby="nameHelp" placeholder="Введите номер группы">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-md-6">
+                <fieldset class="form-group">
+                    <legend>Дополнительная информация</legend>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="area" aria-describedby="nameHelp" placeholder="Место работы">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="position" aria-describedby="nameHelp" placeholder="Должность">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="experience" aria-describedby="nameHelp" placeholder="Стаж">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="degree" aria-describedby="nameHelp" placeholder="Степнь, звание / категория">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="rewards" aria-describedby="nameHelp" placeholder="Награды, достижения">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="form-training" pattern="^(заочная|бюджет|Заочная|Бюджет)$" placeholder="Форма обучения: Заочная или Бюджет" data-pattern-error="Возможные варианты: Заочная или Бюджет">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="work" pattern="^(да|нет|Да|Нет)$" placeholder="Работа в сфере образования: Да или Нет" data-pattern-error="Возможные варианты: Да или Нет">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button type="submit" class="register-form__submit btn btn--accent">Отправить запрос</button>
+            </div>
+            <div class="col-md-3">
+                <button type="reset" class="register-form__reset btn btn--green">Сброс</button>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="register-form__close btn btn--red">Закрыть</button>
+            </div>
+        </div>
+    </form>
+</div>
 <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/index.js"></script></body>
 </html>
